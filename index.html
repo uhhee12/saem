@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+    <script src="https://code.jquery.com/jquery-latest.min.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/tab.js" defer></script>
+
+
+
+    <title>생명샘</title>
+
+</head>
+
+<body>
+
+
+    <div class="wrap">
+
+        <div id="divpop1" class="divpop">
+            <img src="images/mainpop1.jpg">
+            <button type="button" class="form1Btn">문의하기</button>
+            <div class="button_area">
+                <input type="checkbox" name="chkbox" id="todaycloseyn" value='Y'> <label for="todaycloseyn"><span></span>오늘 하루 이 창을 열지 않음</label>
+                <a href='#' onclick="javascript:closeWin1();"><B>[닫기]</B></a>
+            </div>
+        </div>
+
+
+        <div id="nav-icon4">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menuBox"></div>
+
+       <!-- 추가 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="bg">
+                        <div class=" main_txtbox sub-mmm">
+                            <h1><img src="images/main_03.png" alt="메인텍스트"></h1>
+                            <p class="big">생명의 근원이 되는 물질, 클로로필!</p>
+                            <p>클로로필은 지구상에 존재하는 모든 생명체에 에너지를 제공하며<br>
+                                생명활동의 기초 대사에 관여하는 생명의 근원이 되는 물집입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <div class="wrapper mainaaa">
+            <div class="main_sub">
+                <img src="images/main_12.jpg" alt="메인로고" class="main_logo">
+                <div class="mainPBox">
+                    <p class="mainP">(주)생명샘은 우리의 몸이 스스로 건강을 회복하는 자연치유의 원리를 탐구합니다. <br>
+                        자연치유에 반듯이 필요한 최고 천연물질 크로로필의 모든것을 연구합니다.</p>
+                    <p class="mainP2">식물이 태양에너지로 무기물질을 결합하여 유기물질로 만들 때에 작용하는것이 바로 클로로필입니다.<br>
+                        저희 (주)생명샘은 클로로필로 인해 모두가 건강해지길 바라며, (주)생명샘은 꾸준히 연구해 온 결과<br>
+                        사람몸에 흡수가 되는 <span class="greenSpan">생명샘 천연클로로필a</span>가 탄생하게 되었습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="quick_menu ">
+            <a href="#"> <img src="images/homeImg_03.jpg" alt="퀵매뉴이미지1" class="qhomeImg"></a>
+            <!-- 로그인 후 보이는 박스 -->
+
+            <div class="loginbox">
+                <p><span class="name">김로운님</span><br>환영합니다</p>
+                <button type="button" class="logout">로그아웃</button>
+            </div>
+            <ul class="quick_ul">
+                <!-- 로그인 전 hide 노출 로그인박스 숨기기 -->
+                <li class="lohide"><a href="#">로그인</a></li>
+                <li class="lohide"><a href="#">회원가입</a></li>
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">문의하기</a></li>
+                <li class="quli">판매점문의</li>
+            </ul>
+
+            <div class="sbox">
+                <img src="images/main_08.jpg" alt="퀵메뉴이미지2">
+                <p class="quickP">
+                    생명샘<br>
+                    <span class="color1">천연클로로필A</span>
+                    <span class="color2">200,000원</span>
+                </p>
+
+                <ul class="quick_ul2">
+                    <li>배송료</li>
+                    <li>0원</li>
+                    <li>수량</li>
+                    <li>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </form>
+                    </li>
+                </ul>
+                <p class="red">총 <span>200,000</span>원</p>
+                <a href="#" class="orange">구매하기</a>
+            </div>
+        </div>
+
+        <div class="qupop">
+            <div class="qupopBox">
+                <h2 class="poph2">판매점 문의</h2>
+                <table class="sub1_4Box">
+                    <tr>
+                        <th>사업자번호</th>
+                        <td>
+                            <input type="number" name="" id="" class="inbox" placeholder="번호를 입력해주세요.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>대표자명</th>
+                        <td>
+                            <input type="number" name="" id="" class="inbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>전화번호</th>
+                        <td>
+                            <select name="" id="" class="numsel">
+                                <option>010</option>
+                            </select>&nbsp; -&nbsp;
+                            <input type="number" name="" id="" class="inbox2" maxlength="4" oninput="maxLengthCheck(this)" />&nbsp; - &nbsp;<input type="number" name="" id="" class="inbox2" maxlength="4" oninput="maxLengthCheck(this)" />
+                        </td>
+                    </tr>
+                </table>
+                <p class="quP">&#8251; 자세한 상담은 전화로 상담해 드리겠습니다.</p>
+                <div class="popbtnbox">
+                    <button type="submit" class="gray_btn qubtn">문의하기</button>
+                </div>
+            </div>
+        </div>
+
+
+        <nav class='header-nav jbMenu'>
+            <ul class="tabs">
+                <div class="asd">
+                    <li class='active tab-link current' data-tab="tab-1"><a href="#tab-1">클로로필소개</a></li>
+                    <li class="tab-link" data-tab="tab-2"><a href="#tab-2">상품정보</a></li>
+                    <li class="tab-link" data-tab="tab-6"><a href="#tab-6">할인정보</a></li>
+                    <li class="tab-link" data-tab="tab-3"><a href="#tab-3">배송안내</a></li>
+                    <li class="tab-link" data-tab="tab-4"><a href="#tab-4">Q&A</a></li>
+                    <li class="tab-link tabora" data-tab="tab-5"><a href="#">구매하기</a></li>
+                    
+                </div>
+            </ul>
+
+
+
+            <div class="blog"><a href="#">블로그</a></div>
+
+        </nav>
+
+        <div class="fixBottm mobile">
+            <a href="#" class="fixblog">블로그</a>
+            <a href="#">구매하기</a>
+        </div>
+
+
+        <div class="tabcon">
+            <div id="tab-1" class="tab-content current bg100">
+                <div class="box">
+                    <img src="images/main_pro.jpg" alt="클로로필소개" class="report">
+                    <a href="#" class="tab1_Box"></a>
+                </div>
+            </div>
+
+
+            <div id="tab-2" class="tab-content">
+                <img src="images/menusub22.jpg" class="tab2_img">
+                <ul class="maintab3ul">
+                    <li>제품명 : 생명샘 천연 클로로필A</li>
+                    <li>식품의 유형 : 기타가공품</li>
+                    <li>업소명 및 소재지 : (주)생명샘, 전라남도 무안군 몽탄면 봉암길 20-107</li>
+                    <li>유통기한 : 까지</li>
+                    <li>내용량 : 5g × 30EA</li>
+                    <li>원재료 및 함량 : 분유15% (국산) 대두5% (국산)</li>
+                    <li>클로렐라 추출물 80% (국산)</li>
+                    <li>성분명 및 함량 : 천연 클로로필A (1,200mg)</li>
+                    <li>용기(포장)재질 : 폴리에틸렌</li>
+                    <li>품목보고번호 : 20140525136-8</li>
+                    <li>섭취방법 : 1일 1회 ~ 3회 (1회 1티백)</li>
+                    <li>섭취시 주의 사항 : 티벡포장을 개봉후엔 바로 드시기바랍니다.</li>
+                    <li>보관방법 : 직사광선과 습기를 피하여 서늘한 곳에 보관 하십시오</li>
+                    <li>부정, 불량식품 신고는 국번 없이 1399</li>
+                    <li>유통기간중 파손, 변질된 제품은 본사 및 판매처에서 교환해 드립니다.</li>
+                    <li>본 제품은 소비자 피해 보상 규정에 의거하여
+                        교환 또는 보상을 받을 수 있습니다.</li>
+                    <li> 본 제품은 의약품이 아닙니다.</li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div id="tab-3" class="tab-content">
+                <h4>배송안내</h4>
+                <table class="maintab3">
+                    <tr>
+                        <th>배송방법</th>
+                        <td>택배</td>
+                    </tr>
+                    <tr>
+                        <th>배송지역</th>
+                        <td>전국지역(도서산간 지역, 제부도 제외)</td>
+                    </tr>
+                    <tr>
+                        <th>배송기간</th>
+                        <td>1일~3일</td>
+                    </tr>
+                    <tr>
+                        <th class="lastth">배송안내</th>
+                        <td>택배사 : 우체국택배<br>
+                            평일 낮 12시까지 주문, 결제하신 건에 한하여 당일 출고되어 익일 수령하게 됩니다.<br>
+                            (명절제외)<br>
+                            장기신청 주문자일 경우 배송일과 물품개수를 정해주셔야 배송 준비를 합니다.<br>
+                            *그 외 내용정리
+                        </td>
+                    </tr>
+                </table>
+
+
+                <h4>반품/교환 안내</h4>
+                <ul class="maintab3ul">
+                    <li> 교환/반품이 가능한 경우<br>
+                        단순변심, 착오구매에 따른 교환/반품 신청은 상품을 공급받은 날부터 7일 이내 가능합니다. (배송비 고객 부담)<br>
+                        교환/반품을 원하는 고객은 쇼핑몰의 [마이페이지]를 통해 신청하시고 고객센터 번호로 연락주시면 됩니다.<br>
+                        해당 상품 구매 시 사은품/증정품 등이 제공된 경우, 상품 교환/반품 시 함께 보내주셔야 합니다
+                    </li>
+                    <li> 교환/반품이 불가능한 경우<br>
+                        상품이 개봉되었거나 박스, 포장 등이 훼손된 경우<br>
+                        고객의 사용 또는 일부 소비로 상품 가치가 현저히 감소한 경우<br>
+                        한 주문번호 내 상품들에 대해 반품 또는 교환 신청이 완료된 경우<br>
+                        배송완료 후 5일이 경과되어 ‘구매완료’로 변경된 경우<br>
+                        배송완료 후 5일이 경과되지는 않았으나 구매자가 ‘구매완료’로 상태 변경한 경우<br>
+                        고객이 부담해야 하는 교환, 반품 배송비를 수납하지 않은 채 고객센터로 상품을 보낸 경우</li>
+                    <li>불만처리 및 분쟁해결<br>
+                        본 상품의 품질보증 및 피해보상에 관한 사항은 관련 법률 및 공정거래위원회 고시 「소비자분쟁해결기준」에 따릅니다.</li>
+
+                </ul>
+                <h4>환불 안내</h4>
+                <ul class="maintab3ul">
+                    <li> 장기신청으로 상품을 구매하시고 상품을 일부 섭취하였을 경우, 남은 상품에 대한 환불 시 할인금액이 적용되지 않습니다.
+                    </li>
+                    <li>Ex) 148,000원에 12개를 구매하셨다면 처음 결제금액은 총 1,776,000원입니다.<br>
+                        만약 7개를 드시고 5개를 환불 요청하시면
+                        200,000 * 7 =1,400,000원
+                        환불금액 1,776,000 – 1,400,000 = 376,000원입니다.</li>
+
+                </ul>
+            </div>
+
+
+
+            <div id="tab-4" class="tab-content">
+                <p class="mt4topP">궁금하신 사항이 있으시면 문의글 남겨주세요.
+                    전화문의는 <span class="green_txt">010-2227-5373</span> 입니다.</p>
+                <div class="tab4_subbox">
+                    <button type="button" class="gray_btn" onclick="location.href='#'">문의글 작성하기</button>
+                    <select>
+                        <option>답변상태</option>
+                    </select>
+                </div>
+                <table class="tab4_tb1">
+                    <tr>
+                        <th>답변상태</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>작성일</th>
+                    </tr>
+                    <tr>
+                        <td class="green_td">답변</td>
+                        <td>주소를 잘못 입력했습니다</td>
+                        <td>김우유</td>
+                        <td>2022-06-05</td>
+                    </tr>
+                    <tr>
+                        <td class="green_td">답변</td>
+                        <td>설날이 껴있는데 얼마나 걸리나요?</td>
+                        <td>박지한</td>
+                        <td>2022-01-02</td>
+                    </tr>
+                    <tr>
+                        <td class="green_td">답변</td>
+                        <td>구매수량을 수정하려면 어떻게 해야하나요?</td>
+                        <td>용수철</td>
+                        <td>2021-12-25</td>
+                    </tr>
+                    <tr>
+                        <td class="green_td">답변</td>
+                        <td>오전에 구매했는데 배송은 언제 받아 볼 수 있나요?</td>
+                        <td>박모건</td>
+                        <td>2020-06-17</td>
+                    </tr>
+                    <tr>
+                        <td class="red_td">미답변</td>
+                        <td>구매수량을 잘못 입력했습니다. 수정할 수 있나요?</td>
+                        <td>설지환</td>
+                        <td>2020-06-17</td>
+                    </tr>
+                    <tr>
+                        <!-- <td colspan="4">등록된 문의글이 없습니다.</td> -->
+                    </tr>
+                </table>
+
+                <div class="pager">
+                    <ul>
+                        <li class="on"><button type="button">1</button></li>
+                        <li><button type="button">2</button></li>
+                        <li><button type="button">3</button></li>
+                        <li><button type="button">4</button></li>
+                        <li><button type="button">5</button></li>
+                        <li class="next"><button type="button"><img src="images/pager_03.jpg"></button></li>
+                        <li class="next"><button type="button"><img src="images/pager_05.jpg"></button></li>
+                    </ul>
+                </div>
+
+
+                <div class="faq">
+                    <h4>FAQ</h4>
+                    <ul>
+                        <li><span class="num">1</span>자주하는 질문사항 1번입니다.
+                            <div class="hide">
+                                변경 수량을 고객센터로 전화주셔서 말씀해주시면 변경처리해드립니다.<br>
+                                변경 수량및 금액은 마이페이지에서 확인 가능합니다.
+                            </div>
+                        </li>
+                        <li><span class="num">2</span>구매수량을 잘못 입력했습니다. 수정할 수 있을까요?
+                            <div class="hide">
+                                변경 수량을 고객센터로 전화주셔서 말씀해주시면 변경처리해드립니다.<br>
+                                변경 수량및 금액은 마이페이지에서 확인 가능합니다.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div id="tab-6" class="tab-content">
+                <img src="images/maintab3_01.jpg">
+                <div class="tab6Box">
+                    <p class="titleP">지금 내가 구매할 수 있는 수량과 금액을 알아보세요!</p>
+                    <div class="tab6InBox">
+                        <ul>
+                            <li>나의 누적구매수량<span class="greenp">5</span><br>
+                                구매할 수량&nbsp;&nbsp;&nbsp;
+                                <div class="quantity">
+                                    <input type="number" min="1" max="12" step="1" value="1">
+                                </div><br>
+                                <button type="button" class="green_btn tab6Green">금액알아보기</button>
+                            </li>
+                            <li><img src="images/arrow_04.jpg"></li>
+                            <li>결제 금액은<br><span class="money">570,000원</span> 입니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        
+
+            <div class="sub3tap2">
+                <div class="sub3tap2inbox">
+                    <h2 class="poph2">배송신청</h2>
+                    <table class="topcoloTb sub3tap2tb">
+                        <tr>
+                            <th>주문번호</th>
+                            <th>주문일자</th>
+                            <th>상품정보</th>
+                            <th>관리</th>
+                        </tr>
+                        <tr>
+                            <td>12345678</td>
+                            <td>2020.01.11<br>09:04:52</td>
+                            <td>생명샘 천연클로로필A<br>
+                                수량 : 12<br>
+                                총 결제금액 : <span class="red">291,500원</span><br>
+                                주문금액 : 200,000원 (배송비 : 2,500원)<br>
+                                할인해택 : -1,000원</td>
+                            <td>배송가능수량 : <span class="green">12</span></td>
+                        </tr>
+                    </table>
+                    <table class="topcoloTb sub3popsubtb motb1">
+                        <tr>
+                            <th>선택</th>
+                            <th>배송날짜</th>
+                            <th>배송수량</th>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <input type="checkbox" name="menu" id="menu99"> <label for="menu99"><span></span></label>
+                            </td>
+                            <td>매달
+                                <div class="quantity">
+                                    <input type="number" min="1" max="12" step="1" value="1">
+                                </div> 일에 배송됩니다.
+                            </td>
+                            <td>
+                                <div class="quantity">
+                                    <input type="number" min="1" max="100" step="1" value="1">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="topcoloTb sub3popsubtb motb1">
+                        <tr>
+                            <th>선택</th>
+                            <th>배송날짜</th>
+                            <th>배송수량</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="menu" id="menu999"> <label for="menu999"><span></span></label>
+                            </td>
+                            <td>
+                                <div class="dateBox">
+                                    <input type="text" name="" id="" class="date datepicker">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="quantity">
+                                    <input type="number" min="1" max="100" step="1" value="1">
+                                </div>
+                            </td>
+
+                        </tr>
+                    </table>
+                    <div class="popbtnbox">
+                        <button type="button" class="green_btn">신청하기</button>
+                        <button type="button" class="gray_btn sub3_2PCbtn">닫기</button>
+                    </div>
+                    <script src="js/num.js"></script>
+                </div>
+            </div>
+
+        </div>
+        <!--tabcon end -->
+        <footer>
+            <div class="footer_box">
+                <p>주식회사 생명샘 대표 : 오흥상 사업자등록번호 : 443-81-00278<br>
+                    Tel : 010-6667-5373 Fax. : 061-454-5373 E-mail : bonpasteur@naver.com 주소 : 전남 무안군 몽탄면 봉암길 20-107 (대치리)</p>
+                <p class="copy">Copyright © 2020 (주)생명샘. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+    <!--wrap end -->
+
+
+</body></html>
